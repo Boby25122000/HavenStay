@@ -21,6 +21,8 @@
     #header .button-container {
         font-size: 0.7rem;
         gap: 5px;
+        width: 200px;
+        margin-right: 8px;
     }
 
     #signup-section,
