@@ -1,31 +1,24 @@
 /* ! Tablets (576px - 768px) */
 @media (max-width: 768px) {
-    body {
-        background-size: contain;  /* Ensures full visibility without cropping */
-        background-position: top;
-    }
-
     #header {
         height: 60px;
     }
 
     #header .name p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     #header .hostel-logo {
-        width: 100px;
-        margin-left: 1.5rem;
+        width: 80px;
     }
 
     #header .hostel-logo img {
-        height: 50px;
-        width: 90px;
+        height: 45px;
+        width: 80px;
     }
 
     #header .button-container {
-        font-size: 1rem;
-        margin-right: 15px;
+        font-size: 0.7rem;
         gap: 8px;
     }
 
@@ -33,7 +26,7 @@
         max-width: 300px; 
     }
     input[type="text"] {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     .search-btn i {
         font-size: 1rem;

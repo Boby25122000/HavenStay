@@ -5,12 +5,12 @@
     }
 
     #header .name p {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     #header .hostel-logo {
         width: 120px;
-        margin-left: 1.8rem;
+        margin-left: 1.5rem;
     }
 
     #header .hostel-logo img {
@@ -20,7 +20,6 @@
 
     #header .button-container {
         font-size: 1.1rem;
-        margin-right: 25px;
         gap: 8px;
     }
 

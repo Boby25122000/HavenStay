@@ -13,19 +13,18 @@
     }
 
     #header .hostel-logo {
-        width: 80px;
-        margin-left: 1rem;
+        width: 60px;
     }
 
     #header .hostel-logo img {
-        height: 40px;
-        width: 70px;
+        height: 35px;
+        width: 60px;
     }
 
     #header .button-container {
-        font-size: 0.8rem;
-        margin-right: 10px;
-        gap: 5px;
+        font-size: 0.4rem;
+        padding-left: 25px;
+        gap: 2px;
     }
 
     #signup-section,
