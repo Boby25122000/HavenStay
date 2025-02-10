@@ -1,5 +1,10 @@
 /* ! Tablets (576px - 768px) */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (max-width: 768px) {
+    body {
+        background-size: contain;  /* Ensures full visibility without cropping */
+        background-position: top;
+    }
+
     #header {
         height: 60px;
     }
@@ -22,6 +27,16 @@
         font-size: 1rem;
         margin-right: 15px;
         gap: 8px;
+    }
+
+    .search-container {
+        max-width: 300px; 
+    }
+    input[type="text"] {
+        font-size: 0.9rem;
+    }
+    .search-btn i {
+        font-size: 1rem;
     }
 
     #signup-section,

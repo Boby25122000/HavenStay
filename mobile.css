@@ -1,5 +1,9 @@
 /* ! Mobile Devices (Up to 576px) */
-@media (max-width: 576px) {
+@media (max-width: 520px) {
+    body {
+        background-size: contain;
+        background-position: center;
+    }
     #header {
         height: 50px;
     }

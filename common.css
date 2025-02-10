@@ -37,6 +37,11 @@ section {
     position: fixed;
 }
 
+#header .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #header .name p {
     color: #05c5e7;
     font-size: 3rem;
@@ -45,23 +50,23 @@ section {
 #header .hostel-logo {
     height: 100%;
     width: 200px;
-    margin-left: 2rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #header .hostel-logo img {
     height: 80px;
     width: 140px;
-    padding-block: 0.15rem;
 }
 
 #header .button-container {
-    margin-top: 5px;
     display: flex;
     font-size: 1.2rem;
     justify-content: center;
     align-items: center;
     margin-right: 40px;
-    gap: 10px;
 }
 
 #header .button-container .ac-btn {
