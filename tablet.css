@@ -3,9 +3,11 @@
     #header {
         height: 60px;
     }
-
+    #header .name {
+        margin-left: 25px;
+    }
     #header .name p {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     #header .hostel-logo {
@@ -19,7 +21,7 @@
 
     #header .button-container {
         font-size: 0.7rem;
-        gap: 8px;
+        gap: 2px;
     }
 
     .search-container {
