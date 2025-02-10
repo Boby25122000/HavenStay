@@ -86,7 +86,7 @@ section {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
-    background-image: url(/image/homepage.jpg);
+    background-image: url(/image/homepage.png);
     display: flex;
     justify-content: center;
     align-items: center;
