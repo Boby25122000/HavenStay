@@ -5,20 +5,20 @@
     }
 
     #header .name p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     #header .hostel-logo {
-        width: 150px;
+        width: 100px;
     }
 
     #header .hostel-logo img {
         height: 70px;
-        width: 125px;
+        width: 100px;
     }
 
     #header .button-container {
-        font-size: 1rem;
+        font-size: 0.7rem;
         gap: 5px;
     }
 
