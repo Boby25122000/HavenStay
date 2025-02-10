@@ -1,20 +1,21 @@
 /* ! Medium Laptops (993px - 1200px) */
 @media (max-width: 1200px) {
     #header {
-        height: 75px;
+        height: 60px;
+        padding-top: 2.5px;
     }
 
     #header .name p {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     #header .hostel-logo {
-        width: 100px;
+        width: 80px;
     }
 
     #header .hostel-logo img {
-        height: 70px;
-        width: 100px;
+        height: 55px;
+        width: 80px;
     }
 
     #header .button-container {
