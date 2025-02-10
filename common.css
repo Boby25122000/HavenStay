@@ -87,6 +87,7 @@ section {
     background-position: center; 
     background-repeat: no-repeat;
     background-image: url(image/homepage.png);
+    object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
