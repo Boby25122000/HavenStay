@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HavenStay</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="tablet.css" />
+    <link rel="stylesheet" href="tablet.css" />
+    <link rel="stylesheet" href="smallLaptop.css" />
+    <link rel="stylesheet" href="mediumLaptop.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/image/logo.png">
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <div id="header">
+        <div class="hostel-logo">
+          <a href="index.html">
+            <img src="./image/logo.png" alt="logo" width="150" />
+          </a>
+        </div>
+
+        <div class="name">
+          <p><b>HavenStay</b></p>
+        </div>
+
+        <div class="button-container">
+          <a href="signup.html" class="ac-btn">
+            <i class="bi bi-person"></i> Signup
+          </a>
+          |
+          <a href="login.html" class="ac-btn">
+            <i class="bi bi-box-arrow-in-right"></i> Login
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!--Home-->
+    <section id="home">
+      <!-- Search bar -->
+      <div class="search-container">
+        <form id="search-form">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter city to search for PGs"
+              name="query"
+              id="city-search"
+            />
+            <button type="button" class="search-btn" id="search-btn">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--Cities-->
+    <section>
+      <div id="city">
+        <div class="city-container">
+          <a
+            href="delhi.html"
+            title="Delhi"
+            class="city-link"
+            data-city="Delhi"
+          >
+            <img src="./image/delhi.png" alt="Delhi" width="250px" />
+          </a>
+        </div>
+        <div>
+          <a
+            href="mumbai.html"
+            title="Mumbai"
+            class="city-link"
+            data-city="Mumbai"
+          >
+            <img src="./image/mumbai.png" alt="Mumbai" width="250px" />
+          </a>
+        </div>
+        <div>
+          <a
+            href="banglore.html"
+            title="Bangalore"
+            class="city-link"
+            data-city="Bangalore"
+          >
+            <img src="./image/bangalore.png" alt="Bangalore" width="250px" />
+          </a>
+        </div>
+        <div>
+          <a
+            href="chennai.html"
+            title="Chennai"
+            class="city-link"
+            data-city="Chennai"
+          >
+            <img src="./image/chennai.png" alt="Chennai" width="250px" />
+          </a>
+        </div>
+        <div>
+          <a
+            href="hydrabad.html"
+            title="Hyderabad"
+            class="city-link"
+            data-city="Hyderabad"
+          >
+            <img src="./image/hyderabad.png" alt="Hyderabad" width="250px" />
+          </a>
+        </div>
+        <div>
+          <a
+            href="hydrabad.html"
+            title="Hyderabad"
+            class="city-link"
+            data-city="Hyderabad"
+          >
+            <img src="./image/kolkata.png" alt="Kolkata" width="250px" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer>&copy; 2024 HavenStay. All Rights Reserverd.</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

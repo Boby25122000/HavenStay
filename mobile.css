@@ -1,0 +1,40 @@
+/* ! Mobile Devices (Up to 576px) */
+@media (max-width: 576px) {
+    #header {
+        height: 50px;
+    }
+
+    #header .name p {
+        font-size: 1rem;
+    }
+
+    #header .hostel-logo {
+        width: 80px;
+        margin-left: 1rem;
+    }
+
+    #header .hostel-logo img {
+        height: 40px;
+        width: 70px;
+    }
+
+    #header .button-container {
+        font-size: 0.8rem;
+        margin-right: 10px;
+        gap: 5px;
+    }
+
+    #signup-section,
+    #login-section {
+        margin: 3rem auto;
+        padding: 15px;
+    }
+    
+    #signup-section h2,
+    #login-section h2 {
+        font-size: 1.2rem;
+    }
+    #city {
+        
+    }
+}

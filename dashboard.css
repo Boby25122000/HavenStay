@@ -1,0 +1,110 @@
+#dashboard-header {
+    height: 100px;
+    /* height: auto; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vh 1vw 0.5vh;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    position: fixed;
+}
+#dashboard-header p {
+    margin-top: 40px;
+    color: #05c5e7;
+    font-size: 3rem;
+}
+
+#dashboard-header .button-container p{
+    color: black;
+    margin-top: 25px;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    gap: 4px;
+
+}
+
+#dashboard-header .hostel-logo {
+    margin-top: 2px;
+    height: 20px;
+    width: 20px;
+} 
+
+#dashboard-header .hostel-logo img {
+    height: 40px;
+    width: 40px;
+}
+
+#dashboard-header .button-container {
+    margin-top: 5px;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    gap: 4px;
+}
+
+#dashboard-header .button-container .btn {
+    color: black;
+    text-decoration: none;
+}
+
+#dashboard-header .button-container .btn-signup-btn{
+    color: black;
+    text-decoration: none;
+}
+
+#dashboard-header .button-container a:hover {
+    transition: 0.3s ease;
+    transform: translateY(4px);
+}
+
+/* ---------- Profile ----------*/
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 70px;
+    margin-left: 450px;
+
+} 
+
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#profile .profile-container-img {
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid white;
+ }
+
+ #profile .profile-detail {
+    font-size: 1.5rem;
+    display: block;
+    gap: 50px;
+ }
+ #profile .edit {
+    align-self: flex-end;
+ }
+ #profile .edit-profile {
+    text-decoration: underline;
+    cursor: pointer;
+ }

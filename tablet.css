@@ -1,0 +1,36 @@
+/* ! Tablets (576px - 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    #header {
+        height: 60px;
+    }
+
+    #header .name p {
+        font-size: 1.5rem;
+    }
+
+    #header .hostel-logo {
+        width: 100px;
+        margin-left: 1.5rem;
+    }
+
+    #header .hostel-logo img {
+        height: 50px;
+        width: 90px;
+    }
+
+    #header .button-container {
+        font-size: 1rem;
+        margin-right: 15px;
+        gap: 8px;
+    }
+
+    #signup-section,
+    #login-section {
+        margin: 4rem auto;
+    }
+
+    #signup-section h2,
+    #login-section h2 {
+        font-size: 1.4rem;
+    }
+}

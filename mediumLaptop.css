@@ -1,0 +1,32 @@
+/* ! Medium Laptops (993px - 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    #header {
+        height: 75px;
+    }
+
+    #header .name p {
+        font-size: 2.5rem;
+    }
+
+    #header .hostel-logo {
+        width: 150px;
+        margin-left: 2rem;
+    }
+
+    #header .hostel-logo img {
+        height: 70px;
+        width: 125px;
+    }
+
+    #header .button-container {
+        font-size: 1.2rem;
+        margin-right: 35px;
+        gap: 10px;
+    }
+
+    #signup-section,
+    #login-section {
+        margin: 5rem auto;
+        max-width: 500px;
+    }
+}

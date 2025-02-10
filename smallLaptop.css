@@ -1,0 +1,31 @@
+/* ! Small Laptops (769px - 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    #header {
+        height: 70px;
+    }
+
+    #header .name p {
+        font-size: 2rem;
+    }
+
+    #header .hostel-logo {
+        width: 120px;
+        margin-left: 1.8rem;
+    }
+
+    #header .hostel-logo img {
+        height: 60px;
+        width: 100px;
+    }
+
+    #header .button-container {
+        font-size: 1.1rem;
+        margin-right: 25px;
+        gap: 8px;
+    }
+
+    #signup-section,
+    #login-section {
+        max-width: 450px;
+    }
+}
