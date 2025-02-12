@@ -37,22 +37,10 @@ section {
     position: fixed;
 }
 
-#header .name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    margin-left: 20px;
-}
-#header .name p {
-    color: #05c5e7;
-    font-size: 2rem;
-}
-
 #header .hostel-logo {
     height: 100%;
     width: 130px;
-    margin-left: 10px;
+    margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +57,8 @@ section {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    margin-right: 15px;
+    margin-right: 20px;
+    gap: 5px;
 }
 
 #header .button-container .ac-btn {
