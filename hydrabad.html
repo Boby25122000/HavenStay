@@ -3,11 +3,446 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyderabad HavenStay</title>
+    <title>Hydrabad HavenStay</title>
     <link rel="stylesheet" href="common.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/image/logo.png">
+    <style>
+        .welcome {
+            margin-top: 100px;
+            color: #05c5e7;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        #hostel {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-block: 50px;
+            gap: 50px;
+        }
+        span {
+            color: #f17d05;
+        }
+        .container {
+            width: 90%;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-inline: 30px;
+        }
+        .photo {
+            cursor: pointer;
+            height: 90%;
+            width: 300px;
+            border-radius: 5%;
+        }
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5%;
+        }
+        .name-discription {
+            height: 95%;
+            width: 650px;
+            padding-left: 50px;
+        }
+        .name {
+            font-size: 2rem;
+            padding-bottom: 40px;
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .location {
+            color: #555;
+            cursor: pointer;
+            font-size: 2rem;
+        }
+        .discription {
+            font-size: 1.2rem;
+            padding-top: 50px;
+            text-align: justify;
+        }
+        .rating-price {
+            height: 85%;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-inline: 40px;
+            margin-left: 20px;
+        }
+        .star {
+            font-size: 30px;
+            cursor: pointer;
+            padding-top: 10px;
+        }
+        .star h2{
+            color: black;
+            font-size: 30px;
+        }
+        .star {
+            color: gray;
+            transition: color 0.2s;
+        }
+        .star:hover,
+        .star.active {
+            cursor: pointer;
+            color: gold;
+        }
+        .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding-top: 120px;
+        }
+
+        /*! Responsive  */
+        @media (max-width: 1200px) {
+            .container {
+                width: 95%;
+                height: auto;
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+            .photo {
+                width: 100%;
+                height: 250px;
+            }
+            .photo img {
+                border-radius: 10px;
+            }
+            .name-discription {
+                width: 100%;
+                padding: 20px;
+            }
+            .rating-price {
+                width: 100%;
+                text-align: center;
+                margin: 20px 0;
+            }
+        }
+
+        /* Tablets & iPads */
+        @media (max-width: 992px) {
+            .welcome {
+                font-size: 1.8rem;
+            }
+            .container {
+                flex-direction: column;
+                padding: 20px;
+                text-align: center;
+            }
+            .photo {
+                width: 100%;
+                height: 250px;
+            }
+            .name-discription, .rating-price {
+                width: 100%;
+                padding: 20px;
+            }
+            .name {
+                flex-direction: column;
+                text-align: center;
+            }
+            .location {
+                font-size: 1.5rem;
+                padding-top: 5px;
+            }
+            .price {
+                padding-top: 20px;
+            }
+        }
+
+        /* Mobile Phones */
+        @media (max-width: 768px) {
+            .welcome {
+                font-size: 1.2rem;
+            }
+            .container {
+                height: auto;
+                flex-direction: column;
+                padding: 15px;
+                text-align: center;
+            }
+            .photo {
+                width: 100%;
+                height: 200px;
+            }
+            .name {
+                font-size: 1.5rem;
+            }
+            .name h3 {
+                font-size: 1.8rem;
+            }
+            .location {
+                font-size: 1.5rem;
+                padding-top: 5px;
+            }
+            .discription {
+                font-size: 1rem;
+                padding: 15px;
+            }
+            .rating-price {
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+            }
+            .price {
+                font-size: 1.3rem;
+                padding-top: 15px;
+            }
+        }
+
+        /* Small Mobile Devices */
+        @media (max-width: 480px) {
+            .welcome {
+                font-size: 0.7rem;
+            }
+            .name {
+                font-size: 1.4rem;
+                flex-direction: column;
+                text-align: center;
+            }
+            .name h3 {
+                font-size: 1.6rem;
+            }
+            .location {
+                font-size: 1.2rem;
+            }
+            .price {
+                font-size: 1.2rem;
+            }
+            .star {
+                font-size: 20px;
+            }
+        }
+
+    </style>
 </head>
 <body>
-    <div id="hyderabad-hostel">
+    <!--Header-->
+    <header>
+        <div id="header">
+          <div class="hostel-logo">
+            <a href="index.html">
+              <img src="./image/logo.png" alt="logo" width="150" />
+            </a>
+          </div>
+  
+          <div class="button-container">
+            <a href="signup.html" class="ac-btn">
+              <i class="bi bi-person"></i> Signup
+            </a>
+            |
+            <a href="login.html" class="ac-btn">
+              <i class="bi bi-box-arrow-in-right"></i> Login
+            </a>
+          </div>
+        </div>
+    </header>
+    
+    <!--! Heading  -->
+    <div class="welcome">
+        <h2>Welcome to <span>HavenStay</span> in Hydrabad</h2>
     </div>
+
+    <!--! Hostels  -->
+    <section id="hostel">
+        <div class="container">
+            <div class="photo">
+                <img src="image/hostelImg.jpg" alt="">
+            </div>
+
+            <div class="name-discription">
+                <div class="name">
+                    <h3>Hostel Name</h3>
+                    <div class="location">
+                        <i class="bi bi-geo-alt-fill"></i> Location
+                    </div>
+                </div>
+                <div class="discription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad suscipit accusantium id. Nemo quisquam laboriosam aliquam ipsum quas omnis eos. Impedit nemo sit quo porro laudantium explicabo repudiandae ullam, omnis error, reprehenderit vitae aut accusamus optio nam et, consectetur qui est tenetur possimus illo iste minus? Repudiandae animi fuga maiores.
+                </div>
+            </div>
+
+            <div class="rating-price">
+                <div class="star">
+                    <h2>Rate this Hostel</h2>
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <div class="price">
+                    <i class="bi bi-currency-rupee"></i> 10000 per Month
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="photo">
+                <img src="image/hostelImg.jpg" alt="">
+            </div>
+
+            <div class="name-discription">
+                <div class="name">
+                    <h3>Hostel Name</h3>
+                    <div class="location">
+                        <i class="bi bi-geo-alt-fill"></i> Location
+                    </div>
+                </div>
+                <div class="discription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad suscipit accusantium id. Nemo quisquam laboriosam aliquam ipsum quas omnis eos. Impedit nemo sit quo porro laudantium explicabo repudiandae ullam, omnis error, reprehenderit vitae aut accusamus optio nam et, consectetur qui est tenetur possimus illo iste minus? Repudiandae animi fuga maiores.
+                </div>
+            </div>
+
+            <div class="rating-price">
+                <div class="star">
+                    <h2>Rate this Hostel</h2>
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <div class="price">
+                    <i class="bi bi-currency-rupee"></i> 10000 per Month
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="photo">
+                <img src="image/hostelImg.jpg" alt="">
+            </div>
+
+            <div class="name-discription">
+                <div class="name">
+                    <h3>Hostel Name</h3>
+                    <div class="location">
+                        <i class="bi bi-geo-alt-fill"></i> Location
+                    </div>
+                </div>
+                <div class="discription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad suscipit accusantium id. Nemo quisquam laboriosam aliquam ipsum quas omnis eos. Impedit nemo sit quo porro laudantium explicabo repudiandae ullam, omnis error, reprehenderit vitae aut accusamus optio nam et, consectetur qui est tenetur possimus illo iste minus? Repudiandae animi fuga maiores.
+                </div>
+            </div>
+
+            <div class="rating-price">
+                <div class="star">
+                    <h2>Rate this Hostel</h2>
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <div class="price">
+                    <i class="bi bi-currency-rupee"></i> 10000 per Month
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="photo">
+                <img src="image/hostelImg.jpg" alt="">
+            </div>
+
+            <div class="name-discription">
+                <div class="name">
+                    <h3>Hostel Name</h3>
+                    <div class="location">
+                        <i class="bi bi-geo-alt-fill"></i> Location
+                    </div>
+                </div>
+                <div class="discription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad suscipit accusantium id. Nemo quisquam laboriosam aliquam ipsum quas omnis eos. Impedit nemo sit quo porro laudantium explicabo repudiandae ullam, omnis error, reprehenderit vitae aut accusamus optio nam et, consectetur qui est tenetur possimus illo iste minus? Repudiandae animi fuga maiores.
+                </div>
+            </div>
+
+            <div class="rating-price">
+                <div class="star">
+                    <h2>Rate this Hostel</h2>
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <div class="price">
+                    <i class="bi bi-currency-rupee"></i> 10000 per Month
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="photo">
+                <img src="image/hostelImg.jpg" alt="">
+            </div>
+
+            <div class="name-discription">
+                <div class="name">
+                    <h3>Hostel Name</h3>
+                    <div class="location">
+                        <i class="bi bi-geo-alt-fill"></i> Location
+                    </div>
+                </div>
+                <div class="discription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad suscipit accusantium id. Nemo quisquam laboriosam aliquam ipsum quas omnis eos. Impedit nemo sit quo porro laudantium explicabo repudiandae ullam, omnis error, reprehenderit vitae aut accusamus optio nam et, consectetur qui est tenetur possimus illo iste minus? Repudiandae animi fuga maiores.
+                </div>
+            </div>
+
+            <div class="rating-price">
+                <div class="star">
+                    <h2>Rate this Hostel</h2>
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <div class="price">
+                    <i class="bi bi-currency-rupee"></i> 10000 per Month
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>&copy; 2024 HavenStay. All Rights Reserverd.</footer>
+
+    <script>
+        const stars = document.querySelectorAll('.star');
+        const ratingValue = document.getElementById('rating-value');
+        let selectedRating = 0;
+
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                selectedRating = this.getAttribute('data-value');
+                ratingValue.textContent = selectedRating;
+                
+                stars.forEach(s => s.classList.remove('active'));
+                for (let i = 0; i < selectedRating; i++) {
+                    stars[i].classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
